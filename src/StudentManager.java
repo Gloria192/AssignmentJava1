@@ -10,9 +10,9 @@ public class StudentManager {
 
         try {
             manager.addStudent(students, 145, "Alice");
-            manager.addStudent(students, 72, "Bob");
-            manager.addStudent(students, 103, "Carl");
-            manager.addStudent(students, 42, "Dan");
+            manager.addStudent(students, 72, "Benitha");
+            manager.addStudent(students, 103, "Tetina");
+            manager.addStudent(students, 42, "Dany");
 
             manager.sortStudents(students);
             manager.searchStudent(students, 103);
@@ -96,6 +96,9 @@ public class StudentManager {
             }
         } catch (IllegalArgumentException e) {
             System.err.println("Error finding lowest ID: " + e.getMessage());
+        }
+        finally {
+            System.out.println("Sorted Students by ID:");
         }
     }
 }
